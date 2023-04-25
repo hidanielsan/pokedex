@@ -1,4 +1,4 @@
-# Documentation, API and Modules.
+# Pokedex Web App (Documentation, API and Modules)
 Hi, I'm Daniel. I'm a Software Engineer.\
 I made this app using React.js, JavaScript, HTML5, CSS3 and API integration.\
 To create this single-page React application I used "Create React App"
