@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Documentation from './components/Documentation';
+import PokemonListScreen from './components/PokemonListScreen';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { DataProvider } from './context/DataProvider';
+import SeeMore from './components/SeeMore';
+import 'react-loading-skeleton/dist/skeleton.css'
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+      <BrowserRouter>
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          <SeeMore />
+          <Routes>
+            <Route path="/" element={<PokemonListScreen />} />
+            <Route path="/docs" element={<Documentation />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </DataProvider>
   );
 }
-
-export default App;

@@ -5,9 +5,372 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222222!important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.textos-pokemon {
+  border-radius: 30px 30px 5px 5px;
+  margin-top: -25px;
+  background-color: #25476a!important;
+}
+
+.bg-custom-pokemon {
+  background-color: #1f3b5800!important;
+}
+
+.list-item-custom-pokemon {
+  border: none!important;
+  border-top: 0px solid #ffffff33!important;
+}
+
+.pokemon-details {
+  font-size: 17px;
+  font-weight: 100;
+}
+.pokemon-details strong {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.image-box {
+  z-index: 1;
+  height: 140px;
+  position: relative;
+  display: flex;
+}
+
+.image-box-see-more {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  max-height: 240px;
+  min-height: 240px;
+}
+
+.img-pokemon-modal {
+  width: 250px!important;
+  height: 250px;
+}
+
+.img-pokemon-evolutions {
+  width: 110px!important;
+  height: 110px;
+}
+
+.pok-border-right {
+  border-right: 1px solid #ffffff33;
+}
+.pok-border-bottom {
+  border-bottom: 1px solid #ffffff33!important;
+}
+
+.img-pokemon {
+  position: relative;
+  bottom: 5px;
+  width: 155px!important;
+  height: 155px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 0px!important;
+}
+
+.boton-fav  {
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  color: #777;
+  font-size: 14px;
+}
+
+.logo-pokedex {
+  width: 250px;
+  max-width: 100%;
+}
+
+.menu-estatico {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+
+.fav-counter {
+  text-align: center;
+}
+
+.seemore-modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 4;
+}
+
+
+.seemore-modal-content {
+  top: 5vh;
+  left: 0;
+  right: 0;
+  max-width: 85%;
+  width: 400px;
+  min-height: 300px;
+  background-color: #25476a;
+  display: block;
+  margin: 0 auto ;
+  text-align: center;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 5;
+}
+
+.seemore-modal {
+  background-color: #222222bd;
+}
+
+.pokemon-type,
+.pokemon-type-nb {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 5px!important;
+}
+
+.pokemon-type-nb span {
+  border-radius: 3px;
+  margin: 2px 0px 2px 5px;
+  padding: 0px 7px 3px;
+  border: 0px solid #ffffff66;
+  display: inline-block;
+}
+
+.types-list-pokemon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+
+.close-modal-pokemon {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.types-list-pokemon span {
+  display: block!important;
+  margin-bottom: 5px!important;
+  border: none!important;
+}
+
+.pokemon-type span {
+  border-radius: 3px;
+  margin: 2px 0px 2px 5px;
+  padding: 0px 7px 3px;
+  border: 1px solid #ffffff66;
+  display: inline-block;
+}
+
+span.normal {
+  background-color: #818070;
+  color: #ffffff;
+}
+
+span.bug {
+  background-color: #92b61d;
+  color: #111111;
+}
+
+span.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+span.dragon {
+  background-color: #4b22ee;
+  color: #ffffff;
+}
+
+span.electric {
+  background-color: #ffd525;
+  color: #111111;
+}
+
+span.fairy {
+  background-color: #ff89bc;
+  color: #111111;
+}
+
+span.fighting {
+  background-color: #c70202;
+  color: #ffffff;
+}
+
+span.fire {
+  background-color: #ff7111;
+  color: #111111;
+}
+
+span.flying {
+  background-color: #9093fe;
+  color: #111111;
+}
+
+span.ghost {
+  background-color: #663993;
+  color: #ffffff;
+}
+
+span.grass {
+  background-color: #2b9700;
+  color: #ffffff;
+}
+
+span.ground {
+  background-color: #a57630;
+  color: #ffffff;
+}
+
+span.ice {
+  background-color: #88dbec;
+  color: #111111;
+}
+
+span.poison {
+  background-color: #bb22e9;
+  color: #ffffff;
+}
+
+span.psychic {
+  background-color: #fe509b;
+  color: #ffffff;
+}
+
+span.rock {
+  background-color: #c49100;
+  color: #ffffff;
+}
+
+span.steel {
+  background-color: #8e8fa3;
+  color: #ffffff;
+}
+
+span.water {
+  background-color: #546ff7;
+  color: #ffffff;
+}
+
+
+
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 2px;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid #1f3b58;
+  border-bottom: none;
+  width: 32%;
+  border-radius: 20px 20px 0px 0px;
+  font-weight: 500;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #1f3b58;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #1f3b58;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px;
+  border-bottom: 2px solid #1a324a;
+  border-top: none;
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  background-color: #1f3b58;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.tabcontent-evolutions {
+  /* background: linear-gradient(0deg, #4da1a5 0%, #1f3b58 100%); */
+}
+
+.tabcontent::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.tabcontent::-webkit-scrollbar-track {
+  background: #1a324a; 
+}
+ 
+/* Handle */
+.tabcontent::-webkit-scrollbar-thumb {
+  background: #ffffff44; 
+}
+
+/* Handle on hover */
+.tabcontent::-webkit-scrollbar-thumb:hover {
+  background: #ffffff66; 
+}
+
+.evolution-card {
+  border: 2px solid #1a324a;
+  background: #25476a;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.custom-list-docs {
+  list-style: disc;
+  margin-left: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+  main {
+    margin-top: 210px;
+}
+.nav-style-mobile {
+  flex-direction: row!important;
+}
 }
