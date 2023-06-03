@@ -6,7 +6,7 @@ To create this single-page React application I used "Create React App"
 
 This app started as a project for the University, but then I gave it some extra hours to make it more complete and functional. I will add more features in the future.\
 \
-Visit web app: [https://pokedex-by-ds.netlify.app/](https://pokedex-by-daniel.netlify.app/)
+Visit web app: [https://pokedex-ds.netlify.app/](https://pokedex-ds.netlify.app/)
 
 ## REST API:
 https://pokeapi.co/api/v2/pokemon?limit=898&offset=0
